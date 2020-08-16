@@ -5,4 +5,4 @@
 ## 学习参考
 
 - [官方文档](https://webpack.js.org/)
-- [零基础学 Python](https://time.geekbang.org/course/intro/100028901)
+- [玩转 webpack](https://time.geekbang.org/course/intro/100028901)
