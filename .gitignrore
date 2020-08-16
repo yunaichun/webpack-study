@@ -3,3 +3,5 @@
 .vscode
 .idea
 *.log
+/node_modules
+/logs
