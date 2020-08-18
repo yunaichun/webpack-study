@@ -4,6 +4,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import largeNumber from 'large-number';
 import logo from './images/logo.png';
+import bg from './images/bg.jpg';
 import './search.less';
 
 class Search extends React.Component {
@@ -32,6 +33,7 @@ class Search extends React.Component {
                 Text ? <Text /> : null
             }
             { addResult }
+            <img src={ bg } />
             搜索文字的内容<img src={ logo } onClick={ this.loadComponent.bind(this) } />
         </div>;
     }
