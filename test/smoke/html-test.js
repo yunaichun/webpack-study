@@ -6,7 +6,7 @@ describe('Checking generated html files', () => {
             './dist/index.html',
             './dist/search.html'
         ]);
-console.log(111111, files);
+        
         if (files.length > 0) {
             done();
         } else {

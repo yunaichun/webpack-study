@@ -8,7 +8,7 @@ describe('Checking generated css js files', () => {
             './dist/search_*.js',
             './dist/search_*.css',
         ]);
-console.log(22222, files);
+        
         if (files.length > 0) {
             done();
         } else {
