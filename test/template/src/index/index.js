@@ -1,3 +1,5 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
 import { helloworld } from './helloworld';
 import '../../common';
 document.write(helloworld());

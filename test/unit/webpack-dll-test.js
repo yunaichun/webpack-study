@@ -10,7 +10,7 @@ const mocha = new Mocha({
 // == 切换目录
 process.chdir(path.join(__dirname, '../template'));
 
-rimraf('./dist', () => {
+rimraf('./build', () => {
     const dllConfig = require(path.join(__dirname, '../../lib/webpack.dll.js'));
     webpack(dllConfig, (err, stats) => {
         if (err) {
