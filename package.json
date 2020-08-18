@@ -34,6 +34,7 @@
     "image-webpack-loader": "^6.0.0",
     "istanbul": "^0.4.5",
     "mocha": "^6.1.4",
+    "purgecss-webpack-plugin": "^2.3.0",
     "rimraf": "^2.6.3"
   },
   "dependencies": {
