@@ -11,9 +11,8 @@ const mocha = new Mocha({
 process.chdir(path.join(__dirname, '../template'));
 
 rimraf('./dist', () => {
-    const prodConfig = require(path.join(__dirname, '../../lib/webpack.prod.js'));
-    // == 到 template 目录执行 webpack 命令
-    webpack(prodConfig, (err, stats) => {
+    const dllConfig = require(path.join(__dirname, '../../lib/webpack.dll.js'));
+    webpack(dllConfig, (err, stats) => {
         if (err) {
             console.error(err);
             process.exit(2);
@@ -23,11 +22,5 @@ rimraf('./dist', () => {
             modules: false,
             children: false
         }));
-
-        console.log('Webpack build success, begin run test.');
-
-        mocha.addFile(path.join(__dirname, 'html-test.js'));
-        mocha.addFile(path.join(__dirname, 'css-js-test.js'));
-        mocha.run();
     });
 });

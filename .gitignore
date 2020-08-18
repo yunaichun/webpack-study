@@ -7,4 +7,5 @@
 /logs
 /coverage
 /test/template/node_modules
+/test/template/build
 /test/template/dist
