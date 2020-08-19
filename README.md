@@ -4,5 +4,5 @@
 
 ## 学习参考
 
-- [官方文档](https://webpack.js.org/)
+- [webpack 官方文档](https://webpack.js.org/)
 - [玩转 webpack](https://time.geekbang.org/course/intro/100028901)
