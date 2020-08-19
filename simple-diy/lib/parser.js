@@ -18,7 +18,7 @@ module.exports = {
         });
     },
 
-    // == 分析依赖 【@babel/traverse】
+    // == 分析依赖【@babel/traverse】
     getDependencis: (ast) => {
         const dependencies = [];
         traverse(ast, {
@@ -29,7 +29,7 @@ module.exports = {
         return dependencies;
     },
 
-    // == 将 ast 转换成代码
+    // == 将 ast 转换成代码【@babel/core】
     transform: (ast) => {
         const { code } = transformFromAst(ast, null, {
             presets: ['@babel/preset-env']
