@@ -4,7 +4,6 @@ const generate = require('@babel/generator').default;
 const c = 'class Example {}';
 const ast = parser.parse(c);
 const output = generate(ast, { /* options */ }, c);
-console.log(ast);
 console.log(output);
 
 
