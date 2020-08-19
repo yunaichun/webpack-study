@@ -22,6 +22,7 @@ module.exports = class Compiler {
                 this.modules.push(this.buildModule(dependency));
             });
         });
+        console.log(11111, this.modules);
         // == 三、生成文件
         this.emitFiles();
     }
@@ -57,12 +58,16 @@ module.exports = class Compiler {
         const bundle = `
             (function(modules) {
                 function require(fileName) {
+                    // == 获取 modules 对象的 fileName
                     const fn = modules[fileName];
-        
+    
+                    // == module 变量初始化
                     const module = { exports : {} };
-        
+    
+                    // == 执行 modules 对象的 fileName 函数
                     fn(require, module, module.exports);
-        
+
+                    // == 返回 module 对象上的 exports 属性
                     return module.exports;
                 }
 
