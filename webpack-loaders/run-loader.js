@@ -16,6 +16,7 @@ runLoaders({
     ],
     // == 提供额外的上下文信息
     context: {
+        minimize: true,
         emitFile: () => {},
     },
     // == 读取文件方法
