@@ -18,7 +18,7 @@ module.exports = function(source) {
         "[name].[ext]", // == 源文件 - 名称和扩展名
         source
     );
-    this.emitFile(path.join(__dirname, url), source);
+    this.emitFile(path.join(__dirname, `../dist/${url}`), source);
 
 
     // == 四、异步 loader 结果处理

@@ -4,14 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build:by-webpack": "webpack",
-    "build:by-runner": "node run-loader.js"
+    "build:webpack": "webpack",
+    "build:run-raw-loader": "node run-raw-loader.js",
+    "build:run-sprite-loader": "node run-sprite-loader.js"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "loader-runner": "^4.0.0",
     "loader-utils": "^2.0.0",
+    "spritesmith": "^3.4.0",
     "webpack": "^4.44.1",
     "webpack-cli": "^3.3.12"
   }
