@@ -14,3 +14,5 @@
 /webpack-diy/node_modules
 /webpack-loaders/node_modules
 /webpack-loaders/dist
+/webpack-plugins/node_modules
+/webpack-plugins/dist

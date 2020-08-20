@@ -1,0 +1,19 @@
+{
+  "name": "webpack-plugins",
+  "version": "1.0.0",
+  "description": "",
+  "main": "webpack.config.js",
+  "scripts": {
+    "build": "webpack"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "yazl": "^2.5.1"
+  },
+  "dependencies": {
+    "jszip": "^3.5.0"
+  }
+}
