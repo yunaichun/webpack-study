@@ -7,7 +7,7 @@
 /logs
 /coverage
 
-/simple-diy/node_modules
+/webpack-diy/node_modules
 
 /test/template/node_modules
 /test/template/build

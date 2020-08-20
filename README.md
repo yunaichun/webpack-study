@@ -15,7 +15,9 @@
     ├── cases                                   测试用例
     ├── template                                测试模版          
     ├── unit                                    冒烟测试
-├── simple-diy                                  webpack 简版实现
+├── webpack-diy                                 webpack 简版实现
+├── webpack-loaders                             webpack 自定义 loaders
+├── webpack-plugins                             webpack 自定义 plugins
 
 ```
 
