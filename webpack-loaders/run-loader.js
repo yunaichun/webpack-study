@@ -17,7 +17,10 @@ runLoaders({
     // == 提供额外的上下文信息
     context: {
         minimize: true,
-        emitFile: () => {},
+        // == loader-runner 还不支持 emitFile，需要额外实现并注入
+        emitFile: (path, source) => {
+            fs.writeFileSync(path, source, 'utf8');
+        },
     },
     // == 读取文件方法
     readResource: fs.readFile.bind(fs),
