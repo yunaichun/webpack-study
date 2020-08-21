@@ -28,5 +28,5 @@
 - [babel 官方文档](https://babeljs.io/)
 - [极客时间 - 玩转 webpack](https://time.geekbang.org/course/intro/100028901)
 - [字节跳动 - Webpack 揭秘](https://juejin.im/post/6844903685407916039)
-- [Babel是如何读懂JS代码的](https://zhuanlan.zhihu.com/p/272896004)
+- [Babel是如何读懂JS代码的](https://zhuanlan.zhihu.com/p/27289600)
 - [Babel 的工作原理以及怎么写一个 Babel 插件](https://cloud.tencent.com/developer/article/1520124)
