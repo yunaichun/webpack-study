@@ -26,3 +26,4 @@
 - [webpack 官方文档](https://webpack.js.org/)
 - [babel 官方文档](https://babeljs.io/)
 - [极客时间 - 玩转 webpack](https://time.geekbang.org/course/intro/100028901)
+- [字节跳动 - Webpack 揭秘](https://juejin.im/post/6844903685407916039)
