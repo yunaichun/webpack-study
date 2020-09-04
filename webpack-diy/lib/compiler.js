@@ -52,7 +52,9 @@ module.exports = class Compiler {
         const outputPath = path.join(this.output.path, this.output.filename);
         let modules = '';
         this.modules.map((_module) => {
-            modules += `'${ _module.filename }': function (require, module, exports) { ${ _module.transformCode } },`
+            modules += `'${_module.filename}': function (require, module, exports) { 
+                ${_module.transformCode}
+            },`
         });
         
         const bundle = `

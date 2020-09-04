@@ -1,32 +1,38 @@
 
-            (function(modules) {
-                function require(fileName) {
-                    // == 获取 modules 对象的 fileName
-                    const fn = modules[fileName];
-    
-                    // == module 变量初始化
-                    const module = { exports : {} };
-    
-                    // == 执行 modules 对象的 fileName 函数
-                    fn(require, module, module.exports);
+(function (modules) {
+  function require(fileName) {
+    // == 获取 modules 对象的 fileName
+    const fn = modules[fileName];
 
-                    // == 返回 module 对象上的 exports 属性
-                    return module.exports;
-                }
+    // == module 变量初始化
+    const module = { exports: {} };
 
-                require('/Users/yunaichun/Github/WEBPACK/webpack-study/simple-diy/src/index.js');
-            })({'/Users/yunaichun/Github/WEBPACK/webpack-study/simple-diy/src/index.js': function (require, module, exports) { "use strict";
+    // == 执行 modules 对象的 fileName 函数
+    fn(require, module, module.exports);
 
-var _greeting = require("./greeting.js");
+    // == 返回 module 对象上的 exports 属性
+    return module.exports;
+  }
 
-document.write((0, _greeting.greeting)('Jane')); },'./greeting.js': function (require, module, exports) { "use strict";
+  require('/Users/yunaichun/Github/WEBPACK/webpack-study/simple-diy/src/index.js');
+})({
+  '/Users/yunaichun/Github/WEBPACK/webpack-study/simple-diy/src/index.js': function (require, module, exports) {
+    "use strict";
 
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.greeting = greeting;
+    var _greeting = require("./greeting.js");
 
-function greeting(name) {
-  return 'hello' + name;
-} },})
-        
+    document.write((0, _greeting.greeting)('Jane'));
+  },
+  './greeting.js': function (require, module, exports) {
+    "use strict";
+
+    Object.defineProperty(exports, "__esModule", {
+      value: true
+    });
+    exports.greeting = greeting;
+
+    function greeting(name) {
+      return 'hello' + name;
+    }
+  },
+})
