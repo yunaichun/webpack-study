@@ -4,13 +4,14 @@
     // == 获取 modules 对象的 fileName
     const fn = modules[fileName];
 
-    // == module 变量初始化
+    // == module 变量初始化, 会将依赖模块中的方法挂载到这里
     const module = { exports: {} };
 
     // == 执行 modules 对象的 fileName 函数
     fn(require, module, module.exports);
 
-    // == 返回 module 对象上的 exports 属性
+    // == 返回 module.exports, 即返回依赖模块中的方法
+    // == 因为 babel 解析之后会讲模块的方法挂载到 module.exports 中
     return module.exports;
   }
 
