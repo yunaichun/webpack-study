@@ -22,7 +22,7 @@
 
 ```
 
-## 学习参考
+## 参考资料
 
 - [webpack 官方文档](https://webpack.js.org/)
 - [babel 官方文档](https://babeljs.io/)
