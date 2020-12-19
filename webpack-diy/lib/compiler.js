@@ -3,7 +3,6 @@ const fs = require('fs');
 const path = require('path');
 const { getAST, getDependencis, transform } = require('./parser');
 
-
 module.exports = class Compiler {
     constructor(options) {
         const { entry, output } = options;
@@ -13,9 +12,9 @@ module.exports = class Compiler {
     }
 
     run() {
-        // == 一、根据 entry 收集到所有的文件依赖，同时将代码转换为 es5
+        // == 一、解析入口文件，收集依赖
         const entryModule = this.buildModule(this.entry, true);
-        // == 二、展开收集所有依赖
+        // == 二、解析入口文件的所有依赖
         this.modules.push(entryModule);
         this.modules.map((_module) => {
             _module.dependencies.map((dependency) => {
@@ -51,13 +50,14 @@ module.exports = class Compiler {
     emitFiles() { 
         const outputPath = path.join(this.output.path, this.output.filename);
         let modules = '';
+        // == 1、生成 文件名:文件内容生成函数 的键值对
         this.modules.map((_module) => {
-            modules += `'${_module.filename}': function (require, module, exports) { 
+            modules += `'${_module.filename}': function(require, module, exports) { 
                 ${_module.transformCode}
             },`
         });
         
-        // == 自定义实现 require 和 module.exports 方法
+        // == 2、自定义实现 require 方法和 module.exports 方法
         const bundle = `
             (function(modules) {
                 function require(fileName) {
@@ -71,10 +71,11 @@ module.exports = class Compiler {
                     fn(require, module, module.exports);
 
                     // == 返回 module.exports, 即返回依赖模块中的方法
-                    // == 因为 babel 解析之后会讲模块的方法挂载到 module.exports 中
+                    // == 因为 babel 解析之后会将模块的方法挂载到 module.exports 中
                     return module.exports;
                 }
 
+                // == 传入入口文件开始执行
                 require('${this.entry}');
             })({${modules}})
         `;

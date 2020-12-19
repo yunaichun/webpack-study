@@ -1,6 +1,5 @@
 const Compiler = require('./compiler');
-
-
 const options = require('../simplepack.config');
 
-new Compiler(options).run();
+const compiler = new Compiler(options);
+compiler.run();

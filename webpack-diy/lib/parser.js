@@ -5,10 +5,9 @@ const traverse = require('@babel/traverse').default;
 const { transformFromAst } = require('@babel/core');
 
 module.exports = {
-    // == 解析成 AST【@babel/parser】
+    // == 将 js 文件解析成 AST【@babel/parser】
     getAST: (path) => {
         const content = fs.readFileSync(path, 'utf-8');
-
         return parser.parse(content, {
             sourceType: 'module',
             plugins: [
@@ -18,7 +17,7 @@ module.exports = {
         });
     },
 
-    // == 分析依赖【@babel/traverse】
+    // == 遍历AST: 分析依赖【@babel/traverse】
     getDependencis: (ast) => {
         const dependencies = [];
         traverse(ast, {
@@ -29,12 +28,11 @@ module.exports = {
         return dependencies;
     },
 
-    // == 将 ast 转换成代码【@babel/core】
+    // == 将 ast 转换成 js 代码【@babel/core】
     transform: (ast) => {
         const { code } = transformFromAst(ast, null, {
             presets: ['@babel/preset-env']
         });
-      
         return code;
     }
 };
