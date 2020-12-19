@@ -18,8 +18,6 @@
 ├── webpack-diy                                 webpack 简版实现
 ├── webpack-loaders                             webpack 自定义 loaders
 ├── webpack-plugins                             webpack 自定义 plugins
-├── babel-study                                 babel 学习
-
 ```
 
 ## 参考资料
