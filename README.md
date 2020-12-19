@@ -26,14 +26,14 @@ $ npm run test:prod
     ├── webpack.dll.js                          webpack 三方包构建配置          
     ├── webpack.dev.js                          webpack 开发环境配置
     ├── webpack.prod.js                         webpack 生成环境配置
-    ├── webpack.ssr.js                          webpack ssr环境配置
+    └── webpack.ssr.js                          webpack ssr环境配置
 ├── test
     ├── cases                                   测试用例
     ├── template                                测试模版          
-    ├── unit                                    冒烟测试
-├── webpack-diy                                 webpack 简版实现
+    └── unit                                    冒烟测试
 ├── webpack-loaders                             webpack 自定义 loaders
 ├── webpack-plugins                             webpack 自定义 plugins
+└── webpack-diy                                 webpack 简版实现
 ```
 
 ## 参考资料
