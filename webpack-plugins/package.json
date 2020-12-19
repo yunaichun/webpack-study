@@ -4,7 +4,7 @@
   "description": "",
   "main": "webpack.config.js",
   "scripts": {
-    "build": "webpack"
+    "test:zip-plugin": "webpack"
   },
   "author": "",
   "license": "ISC",

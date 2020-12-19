@@ -9,13 +9,13 @@ webpack 自定义 loader.
 npm install
 
 # loader 加载顺序查看
-npm run build:webpack
+npm run test:loader-sequence
 
-# loader-runner 测试 raw-loader
-npm run build:run-raw-loader
+# loader-runner 工具测试自定义 raw-loader 是否成功运行
+npm run test:raw-loader
 
-# loader-runner 测试 sprite-loader
-npm run build:run-sprite-loader
+# loader-runner 工具测试自定义 sprite-loader 是否成功运行
+npm run test:sprite-loader
 ```
 
 ## 参考资料

@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build:webpack": "webpack",
-    "build:run-raw-loader": "node run-raw-loader.js",
-    "build:run-sprite-loader": "node run-sprite-loader.js"
+    "test:loader-sequence": "webpack",
+    "test:raw-loader": "node run-raw-loader.js",
+    "test:sprite-loader": "node run-sprite-loader.js"
   },
   "author": "",
   "license": "ISC",

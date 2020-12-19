@@ -8,8 +8,8 @@ webpack 自定义 plugin。
 # 安装依赖
 npm install
 
-# 运行压缩文件插件
-npm run build:zip-plugin
+# 测试自定义插件 zip-plugin 是否成功运行
+npm run test:zip-plugin
 ```
 
 ## 参考资料
