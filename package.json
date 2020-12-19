@@ -6,7 +6,7 @@
   "scripts": {
     "test:base": "NODE_ENV=base istanbul cover ./node_modules/.bin/_mocha",
     "test:dll": "NODE_ENV=dll istanbul cover ./node_modules/.bin/_mocha",
-    "test:prod": "NODE_ENV=prod istanbul cover ./node_modules/.bin/_mocha",
+    "test:prod": "npm run test:dll && NODE_ENV=prod istanbul cover ./node_modules/.bin/_mocha",
     "eslint": "eslint ./lib --fix"
   },
   "keywords": [

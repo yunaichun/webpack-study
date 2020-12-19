@@ -1,8 +1,24 @@
-### 简介
+## 简介
 
 此项目是学习构建工具 webpack、babel 相关实践，记录学习的点滴，方便以后忘记可以从学习轨迹中迅速上手。
 
-### 目录结构
+## 项目启动
+
+```bash
+# 安装依赖
+$ npm install
+
+# 测试 webpack.base.js 文件
+$ npm run test:base
+
+# 测试 webpack.dll.js 文件
+$ npm run test:dll
+
+# 测试 webpack.prod.js 文件
+$ npm run test:prod
+```
+
+## 目录结构
 
 ```
 ├── lib
