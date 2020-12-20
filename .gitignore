@@ -7,12 +7,12 @@
 /logs
 /coverage
 
-/test/template/node_modules
-/test/template/build
-/test/template/dist
-
-/webpack-diy/node_modules
+/webpack-simple/node_modules
 /webpack-loaders/node_modules
 /webpack-loaders/dist
 /webpack-plugins/node_modules
 /webpack-plugins/dist
+
+/test/template/node_modules
+/test/template/build
+/test/template/dist
