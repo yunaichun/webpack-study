@@ -33,7 +33,7 @@ $ npm run test:prod
     └── unit                                    冒烟测试
 ├── webpack-loaders                             webpack 自定义 loaders
 ├── webpack-plugins                             webpack 自定义 plugins
-└── webpack-diy                                 webpack 简版实现
+└── webpack-simple                              webpack 简版实现
 ```
 
 ## 学习笔记
