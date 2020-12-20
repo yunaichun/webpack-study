@@ -46,9 +46,9 @@ $ npm run test:prod
 - 开发环境配置: https://www.answera.top/frontend/webpack/devserver
 - 构建速度优化: https://www.answera.top/frontend/webpack/optimization-build
 - 长缓存优化: https://www.answera.top/frontend/webpack/optimization-cache
-- 自定义loader: https://www.answera.top/frontend/webpack/custom-loader
-- 自定义plugin: https://www.answera.top/frontend/webpack/custom-plugin
-- webpack简易实现: https://www.answera.top/frontend/webpack/simple-achieve
+- 自定义loader: https://www.answera.top/frontend/webpack/webpack-loader
+- 自定义plugin: https://www.answera.top/frontend/webpack/webpack-plugin
+- webpack简易实现: https://www.answera.top/frontend/webpack/webpack-simple
 
 ## 参考资料
 
