@@ -8,8 +8,8 @@ webpack 简易版打包构建实现.
 # 安装依赖
 npm install
 
-# 测试简易版 webpack 打包是否成功
-npm run test:webpack-diy
+# 测试简易版 webpack 打包
+npm run build
 ```
 
 ## 参考资料
