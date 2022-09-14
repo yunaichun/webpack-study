@@ -8,8 +8,11 @@
 /coverage
 
 /webpack-simple/node_modules
+/webpack-simple/dist
+
 /webpack-loaders/node_modules
 /webpack-loaders/dist
+
 /webpack-plugins/node_modules
 /webpack-plugins/dist
 
